@@ -2,7 +2,7 @@
 
 > DL model graph to pytorch code
 
- Visually edit the network structure and then generate the code
+ Visually edit the network model and then generate the pytorch code
 ## Demo
 
 ![](./demo/demo.jpg)
