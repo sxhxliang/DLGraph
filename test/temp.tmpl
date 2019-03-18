@@ -1,0 +1,12 @@
+    class PREFIX Hello {{ username }} (nn.Module):
+
+        def __init__(self, target,):
+            super(PREFIX, self).__init__()
+            {{items}}
+            {% asyncAll item in items %}
+                item
+            {% endall %}
+
+        def forward(self, INPUTS ):
+            self.loss = F.mse_loss(input, self.target)
+            return OUTPUTS

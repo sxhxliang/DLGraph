@@ -1,0 +1,16 @@
+
+
+class {{%PREFIX%}}{{%CLASSNAME%}}(nn.Module):
+
+    def __init__(self, target,):
+        super({{%PREFIX%}}{{%CLASSNAME%}}, self).__init__()
+        
+        {% for it in OPTNODES%}
+        {% if it['opt'] %}
+        self.{{%PREFIX%}}{{%it['name']%}} = {{%it['type']%}}({{%it['params']%}})
+        {% endif %}
+        {% endfor %}
+
+    def forward(self, {{%INPUTS%}}):
+        self.loss = F.mse_loss(input, self.target)
+        return {{%OUTPUTS%}}

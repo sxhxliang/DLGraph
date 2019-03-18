@@ -1,0 +1,49 @@
+{
+  "last_node_id": 3,
+  "last_link_id": 2,
+  "nodes": [{
+    "id": 3,
+    "type": "pytorch/BatchNorm2d",
+    "pos": [328, 442],
+    "size": {
+      "0": 140,
+      "1": 19
+    },
+    "flags": {},
+    "mode": 0,
+    "inputs": [{
+      "name": "in",
+      "type": 0,
+      "link": 1
+    }],
+    "outputs": [{
+      "name": "out",
+      "links": null
+    }],
+    "properties": {}
+  }, {
+    "id": 2,
+    "type": "graph/GlobalInput",
+    "pos": [259, 150],
+    "size": {
+      "0": 140,
+      "1": 19
+    },
+    "flags": {},
+    "mode": 0,
+    "outputs": [{
+      "name": "input_868",
+      "type": null,
+      "links": [1]
+    }],
+    "properties": {
+      "name": "input_868",
+      "type": null
+    }
+  }],
+  "links": [
+    [1, 2, 0, 3, 0, 0]
+  ],
+  "groups": [],
+  "config": {}
+}
