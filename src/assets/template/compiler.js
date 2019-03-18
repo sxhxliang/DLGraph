@@ -193,7 +193,7 @@ function TemplateRender(graph,option){
           new_out_name = curInputNames[0]
       }
 
-      forwardStr = new_out_name + ' = self.'+ prefix+ GraphNodesMap[id]['name']+'('+out_name+')'
+      forwardStr = new_out_name + ' = self.'+ prefix+ GraphNodesMap[id]['name']+'('+new_out_name+')'
       record_node_output_name[id] = new_out_name
       console.log(forwardStr)
       forwardStrs.push(forwardStr)
