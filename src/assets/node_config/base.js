@@ -1,6 +1,6 @@
 
 //Subgraph: a node that contains a graph
-import {LiteGraph} from '../js/litegraph_hd_vue.js'
+import {LiteGraph} from '../js/graph.js'
 
 function Subgraph()
 {

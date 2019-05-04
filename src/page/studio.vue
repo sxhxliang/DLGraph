@@ -9,10 +9,8 @@
 
 <script>
 import { LiteGUI } from "../assets/js/litegui.js";
-import { LiteGraph } from "../assets/js/litegraph_hd_vue.js";
-// import {LiteGraph} from '../assets/js/litegraph_vue.js'
+import { LiteGraph } from "../assets/js/graph.js";
 import { nodeConfig } from "../assets/node_config/index.js";
-import { gLayout } from "../assets/js/graph_layout.js";
 import {TemplateRender} from '../assets/template/compiler.js'
 var dagre = require("dagre");
 
@@ -49,7 +47,8 @@ export default {
       return (window.devicePixelRatio || 1) / backingStore;
     },
     registerNodeType() {
-      nodeConfig(LiteGraph);
+      LiteGraph.ConfigNodes(nodeConfig)
+      // nodeConfig(LiteGraph);
     },
     init() {
       const _this = this;
